@@ -27,7 +27,7 @@
                 <tr>
                     <td>
                         <input type="submit" value="Login"/>
-                        <input type="button" value="Criar Conta" onclick="location.href='usuarui/manter.jsp'"/>
+                        <input type="button" value="Criar Conta" onclick="location.href='usuario/manter.jsp'"/>
                     </td>
                 </tr>
             </table>

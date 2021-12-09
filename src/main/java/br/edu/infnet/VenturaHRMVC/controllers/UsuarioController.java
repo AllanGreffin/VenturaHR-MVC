@@ -23,7 +23,7 @@ public class UsuarioController {
     @RequestMapping("/login")
     public ModelAndView logarNoSite(String email, String senha){
         ModelAndView retorno = new ModelAndView("index");
-        if(!StringUtils.hasText(email) && !StringUtils.hasText(senha)){
+        if(StringUtils.hasText(email) && StringUtils.hasText(senha)){
             Usuario usuario = usuarioService.obterPorEmail(email);
             String destino = "";
             if(usuario != null && senha.equals(usuario.getSenha())){
